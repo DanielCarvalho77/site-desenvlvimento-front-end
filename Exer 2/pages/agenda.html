@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Fontes Google-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Materealize CSS-->
+    <link rel="stylesheet" href="../css/materialize.css">
+
+    <link rel="stylesheet" href="../css/estilo.css">
+
+    <title>Exercício 2</title>
+</head>
+
+<body>
+
+
+    <header>
+        <nav>
+            <section class="nav-wrapper blue-grey darken-4">
+                <a href="/index.html" class="brand-logo cabecalho"> <i class="large material-icons">fingerprint</i>Dev Bruto</a>
+                <ul id="nav-mobile" class="right hide-on-med-and-down">
+                    <li><a href="/pages/agenda.html" class="btn waves-effect waves-yellow">Agenda</a></li>
+                    <li><a href="/pages/assuntos.html" class="btn waves-effect waves-yellow">Assuntos</a></li>
+                    <li><a href="/pages/contato.html" class="btn waves-effect waves-yellow">Contato</a></li>
+                </ul>
+            </section>
+        </nav>
+    </header>
+
+    <main>
+        <section class="parallax-container">
+            <section class="parallax"><img src="..//images/fundos.jpg"></section>
+        </section>
+        <section class="section blue-grey darken-4">
+            <section class="row container">
+                <h2 class="header conteudo_titulo">Agenda</h2>
+
+                <section>
+                    <ul class="collapsible">
+                        <li>
+                            <section class="collapsible-header texto_agenda">
+                                <i class="material-icons">place</i>
+                                Pato Branco
+                                <span class="new badge"></span>
+                            </section>
+                            <section class="collapsible-body white">
+                                <p class="texto_agenda">Dia 20/12/2024. <br>Estaremos na cidade falando de desenvolvimento front-end. Serão 3 dias de imersão.</p>
+                            </section>
+                        </li>
+                        <li>
+                            <section class="collapsible-header texto_agenda">
+                                <i class="material-icons">place</i>
+                                Curitiba
+                                <span class=""></span>
+                            </section>
+                            <section class="collapsible-body white">
+                                <p class="texto_agenda">Dia 10/12/2024. <br>Estaremos na cidade falando de desenvolvimento full stack. Serão 3 dias de imersão.</p>
+                            </section>
+                        </li>
+                        <li>
+                            <section class="collapsible-header texto_agenda">
+                                <i class="material-icons">place</i>
+                                São Paulo
+                                <span class=""></span>
+                            </section>
+                            <section class="collapsible-body white">
+                                <p class="texto_agenda">Dia 01/12/2024. <br>Estaremos na cidade falando de desenvolvimento full stack. Serão 3 dias de imersão.</p>
+                            </section>
+                        </li>
+                        <li>
+                            <section class="collapsible-header texto_agenda">
+                                <i class="material-icons">place</i>
+                                Porto Alegre
+                                <span class=""></span>
+                            </section>
+                            <section class="collapsible-body white">
+                                <p class="texto_agenda">Dia 20/11/2024. <br>Estaremos na cidade falando de desenvolvimento full stack. Serão 3 dias de imersão.</p>
+                            </section>
+                        </li>
+                    </ul>
+                </section>
+
+            </section>
+        </section>
+        <section class="parallax-container">
+            <section class="parallax"><img src="..//images/fundos.jpg"></section>
+        </section>
+    </main>
+
+    <footer class="page-footer blue-grey darken-4">
+    
+        <section class="footer-copyright">
+          <section class="container">
+          <section>
+            <ul class="footer_redes">
+                <li class="footer_redes_section"><a target="_blank" href="https://wa.me/5546999856945"><img src="/images/icons8-whatsapp-48.png" alt=""></a></li>
+                <li class="footer_redes_section"><a target="_blank" href="https://www.instagram.com/daniel.carvalhodarosa/"><img src="/images/icon-instagram.png" alt=""></a></li>
+                <li class="footer_redes_section"><a target="_blank" href="https://www.facebook.com/daniel.carvalhodarosa/"><img src="/images/icon-facebook.png" alt=""></a></li>
+            </ul>
+          </section>
+
+          </section>
+        </section>
+      </footer>
+
+    <!--jQuery CDN-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <!--Materealize JS-->
+    <script src="../js/materialize.js"></script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var elems = document.querySelectorAll('.parallax');
+            var instances = M.Parallax.init(elems, options);
+        });
+
+        // Or with jQuery
+
+        $(document).ready(function () {
+            $('.parallax').parallax();
+        });
+
+        document.addEventListener('DOMContentLoaded', function () {
+            var elems = document.querySelectorAll('.collapsible');
+            var instances = M.Collapsible.init(elems, options);
+        });
+
+        // Or with jQuery
+
+        $(document).ready(function () {
+            $('.collapsible').collapsible();
+        });
+
+    </script>
+</body>
+
+</html>

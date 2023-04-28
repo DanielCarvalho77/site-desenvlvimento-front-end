@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Fontes Google-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Materealize CSS-->
+    <link rel="stylesheet" href="../css/materialize.css">
+
+    <link rel="stylesheet" href="../css/estilo.css">
+
+    <title>Exercício 2</title>
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <section class="nav-wrapper blue-grey darken-4">
+                <a href="/index.html" class="brand-logo cabecalho"> <i class="large material-icons">fingerprint</i>Dev Bruto</a>
+                <ul id="nav-mobile" class="right hide-on-med-and-down">
+                    <li><a href="/pages/agenda.html" class="btn waves-effect waves-yellow">Agenda</a></li>
+                    <li><a href="/pages/assuntos.html" class="btn waves-effect waves-yellow">Assuntos</a></li>
+                    <li><a href="/pages/contato.html" class="btn waves-effect waves-yellow">Contato</a></li>
+                </ul>
+            </section>
+        </nav>
+    </header>
+
+    <main>
+        <section class="parallax-container">
+            <section class="parallax"><img src="..//images/fundos.jpg"></section>
+        </section>
+        <section class="section blue-grey lighten-4">
+            <section class="row container">
+                <h2 class="header conteudo_titulo_contato">Contato</h2>
+                <section class="row">
+                    <form class="col s12">
+                      <section class="row">
+                        <section class="input-field col s6">
+                          <i class="material-icons prefix">account_circle</i>
+                          <input id="icon_prefix" type="text" class="validate">
+                          <label for="icon_prefix">Nome completo</label>
+                        </section>
+                        <section class="input-field col s6">
+                          <i class="material-icons prefix">phone</i>
+                          <input id="icon_telephone" type="tel" class="validate">
+                          <label for="icon_telephone">Telefone</label>
+                        </section>
+                      </section>
+                    </form>
+                  </section>
+                  <section class="row">
+                    <form class="col s12">
+                      <section class="row">
+                        <section class="input-field col s6">
+                          <i class="material-icons prefix">email</i>
+                          <input id="icon_prefix" type="email" class="validate">
+                          <label for="icon_prefix">E-mail</label>
+                        </section>
+                        <section class="input-field col s6">
+                          <i class="material-icons prefix">import_contacts
+                        </i>
+                          <input id="icon_telephone" type="tel" class="validate">
+                          <label for="icon_telephone">Assunto</label>
+                        </section>
+                      </section>
+                    </form>
+                  </section>
+                  <section class="row">
+                    <form class="col s12">
+                      <section class="row">
+                        <section class="input-field col s12">
+                          <textarea id="textarea1" class="materialize-textarea"></textarea>
+                          <label for="textarea1">Deixe sua mensagem ou duvida</label>
+                        </section>
+                      </section>
+                    </form>
+                  </section>
+                  <section>
+                    <a onclick="M.toast({html: 'Enviado com sucesso :)'})"  class="waves-effect waves-light btn btn_formulario"><i class="material-icons left">send</i>Enviar</a>
+                  </section>
+            </section>
+        </section>
+        <section class="parallax-container">
+            <section class="parallax"><img src="..//images/fundos.jpg"></section>
+        </section>
+    </main>
+
+    <footer class="page-footer blue-grey darken-4">
+    
+        <section class="footer-copyright">
+          <section class="container">
+          <section>
+            <ul class="footer_redes">
+                <li class="footer_redes_section"><a target="_blank" href="https://wa.me/5546999856945"><img src="/images/icons8-whatsapp-48.png" alt=""></a></li>
+                <li class="footer_redes_section"><a target="_blank" href="https://www.instagram.com/daniel.carvalhodarosa/"><img src="/images/icon-instagram.png" alt=""></a></li>
+                <li class="footer_redes_section"><a target="_blank" href="https://www.facebook.com/daniel.carvalhodarosa/"><img src="/images/icon-facebook.png" alt=""></a></li>
+            </ul>
+          </section>
+
+          </section>
+        </section>
+      </footer>
+
+    <!--jQuery CDN-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <!--Materealize JS-->
+    <script src="../js/materialize.js"></script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var elems = document.querySelectorAll('.parallax');
+            var instances = M.Parallax.init(elems, options);
+        });
+
+        // Or with jQuery
+
+        $(document).ready(function () {
+            $('.parallax').parallax();
+        });
+    </script>
+
+    <script>
+         document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.autocomplete');
+    var instances = M.Autocomplete.init(elems, options);
+  });
+
+
+  // Or with jQuery
+
+  $(document).ready(function(){
+    $('input.autocomplete').autocomplete({
+      data: {
+        "Apple": null,
+        "Microsoft": null,
+        "Google": 'https://placehold.it/250x250'
+      },
+    });
+  });
+        
+    </script>
+</body>
+
+</html>

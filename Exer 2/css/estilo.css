@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.cabecalho{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    
+}
+
+.texto{
+    color: aliceblue;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+}
+
+.conteudo{
+    text-align: center;
+}
+
+.conteudo_titulo{
+    color: azure;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+}
+
+.texto_agenda{
+    font-family: 'Roboto', sans-serif;
+    color: #69857C;
+    font-weight: 700;   
+}
+
+.assunto_titulo_conteudo{
+    color: azure;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+
+}
+
+.assunto_texto_conteudo{
+    color: aliceblue;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    text-align: left;
+}
+
+.footer_redes{
+    display: flex;
+    flex-direction: row;
+    flex-grow: 5px;
+    justify-content:center;
+    justify-content: space-between;
+}
+
+.footer_redes_section{
+    border: transparent;
+    background-color: transparent;   
+    
+    border-radius: 10px;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: backgrond-color 0.9s ease-out;   
+    box-shadow: rgba(84, 137, 20, 0) 0px 7px 29px 0px;
+}
+
+.footer_redes_section:hover{
+    background-color: #ccc8ea;
+    border-radius: 10px;
+    border: 5px solid #ccc8ea;;
+    transition: background-color 0.5s ease-in-out;
+}
+
+.conteudo_titulo_contato{
+    color: rgb(0, 0, 0);
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+}
+
+.formulario{
+    display: flex;
+    flex-direction: row;
+    flex-grow: 5px;
+    justify-content:center;
+}
+
+.btn_formulario{
+    height: 60px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
